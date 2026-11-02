@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StaffWare 2.0 · Republic Electric West</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="app" class="app">
+  <aside id="sidebar" class="sidebar" aria-label="Modules"></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main-col">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <nav class="crumbs" id="crumbs" aria-label="Breadcrumb"></nav>
+      <button class="searchbtn" id="searchBtn" aria-label="Search all screens and reports">
+        <span>🔍︎</span><span class="s-text">Search screens &amp; reports</span><kbd>⌘K</kbd>
+      </button>
+      <span class="demo-tag" title="This preview uses sample data. Nothing is saved or sent to StaffwareSQL.">Demo · sample data</span>
+      <div class="user" title="Demo user">
+        <span class="avatar">ES</span>
+        <span class="u-text"><b>Eric Stafford</b><small>REW · Sacramento CA</small></span>
+      </div>
+    </header>
+    <main id="view" class="view" tabindex="-1"></main>
+    <footer class="statusbar"><span id="status">Demo mode</span><span>Sample data as of 10/27/2026 · Not connected to StaffwareSQL</span></footer>
+  </div>
+</div>
+
+<div id="layer"></div>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
